@@ -1,4 +1,4 @@
-<div class="row">
+<!-- <div class="row">
     <button class="btn btn-success" >new Categories</button>
 </div>
 <div class="row">
@@ -8,7 +8,7 @@
     </a>
     
     <hr>
-</div>
+</div> -->
 <button class="btn btn-fail" (click)="onGet()">post</button>
-<app-categories-item></app-categories-item>
+<app-categories-item  [catlists]="catlists"  *ngFor="let catlists of catlist"></app-categories-item>
 

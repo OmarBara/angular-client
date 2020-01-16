@@ -7,9 +7,20 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CategoriesItemComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+
+    var get = ()=>{
+      return this.catlists
+    }
+
+  }
+  @Input() catlists: any;
+  
 
   ngOnInit() {
+    
+    console.log(this.catlists)
   }
-  @Input() childItem: object;
+
+
 }
